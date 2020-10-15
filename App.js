@@ -38,12 +38,11 @@ export default class App extends React.Component {
   }
 
   startStopTimer = workSession => {
-    // Stop/pause timer
+    
     if (this.isRunning) {
       return this.pauseTimer();
     }
 
-    // Start/Continue timer
     this.setState(previousState => ({
       buttonLabel: STOP_LABEL,
     }));
@@ -217,7 +216,7 @@ export default class App extends React.Component {
           <TouchableOpacity
             style={styles.resetBtn}
             onPress={() => this.resetTimer()}>
-            <Text style={styles.resetBtnText}>Rescomeçar</Text>
+            <Text style={styles.resetBtnText}>Recomeçar</Text>
           </TouchableOpacity>
         </View>
       </View>
