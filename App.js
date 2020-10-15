@@ -211,7 +211,7 @@ export default class App extends React.Component {
             style={styles.startStopBtn}
             onPress={() => this.startStopTimer()}>
             <Text style={styles.startStopBtnText}>
-              {this.state.buttonLabel} <br />
+              {this.state.buttonLabel}
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
